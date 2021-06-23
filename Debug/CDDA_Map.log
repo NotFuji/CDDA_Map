@@ -1,0 +1,7 @@
+﻿  CDDA_Map.cpp
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(44,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(59,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(71,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(84,18): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(203,23): warning C4018: '<': signed/unsigned mismatch
+  CDDA_Map.vcxproj -> C:\Users\andyf\source\repos\CDDA_Map\Debug\CDDA_Map.exe
