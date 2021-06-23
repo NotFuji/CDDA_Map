@@ -11,3 +11,4 @@ Place a 24-bit bitmap into the application folder and run the application.
 It will output entries for "om_terrain" and "rows" for the mapgen json, and "overmaps" for the overmap special json.
 
 *Note: There is no sanity checking for image size, so make sure your image dimensions are some multiple of 24
+*Also Note: Overmaps are set to z-level 9 (line 250) , so change that if you don't want your specials to spawn in space
