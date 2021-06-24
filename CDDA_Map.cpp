@@ -114,17 +114,17 @@ ruleBook parse_rules() {
             std::getline( file, line );
 
             if( line.compare( "[T]" ) == 0 ) {
-                std::cout << "TILE MODE\n";
+                //std::cout << "TILE MODE\n";
                 mode = 1;
                 continue;
             }
             if( line.compare( "[M]" ) == 0 ) {
-                std::cout << "MON MODE\n";
+                //std::cout << "MON MODE\n";
                 mode = 2;
                 continue;
             }
             if( line.compare( "[I]" ) == 0 ) {
-                std::cout << "ITEM MODE\n";
+                //std::cout << "ITEM MODE\n";
                 mode = 3;
                 continue;
             }
@@ -528,6 +528,8 @@ int main()
 
     std::string filename;
 
+    int zlevel = 0;
+
     std::cout << "Filename: ";
     std::getline( std::cin, filename );
 
@@ -539,6 +541,15 @@ int main()
 
     std::cout << "Palette ID: ";
     std::getline( std::cin, palette );
+
+    std::string s_zlevel;
+    std::cout << "Z-Level (Default 0): ";
+    std::getline( std::cin, s_zlevel );
+    if( s_zlevel.compare( "" ) == 0 ) {
+        zlevel = 0;
+    } else {
+        zlevel = std::strtol( s_zlevel.c_str(), nullptr, 10 );
+    }
 
     /*********
     * Do Map *
@@ -725,7 +736,7 @@ int main()
     //{ "point": [ 0, 0, 0 ], "overmap": "municipal_reactor_north" },
     for( int i = 0; i < mapheight; i++ ) {
         for( int j = 0; j < mapwidth; j++ ) {
-            outfile << "{ \"point\": [ " << j << ", " << i << ", " << "9 ], \"overmap\": \"" << filename + "_" + std::to_string( i ) + "_" + std::to_string( j ) << "_north\" }";
+            outfile << "{ \"point\": [ " << j << ", " << i << ", " << zlevel << " ], \"overmap\": \"" << filename + "_" + std::to_string( i ) + "_" + std::to_string( j ) << "_north\" }";
             if( i + 1 < mapheight || j + 1 < mapwidth ) {
                 outfile << ",\n";
             }

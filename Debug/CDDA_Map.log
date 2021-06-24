@@ -11,10 +11,10 @@ C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(409,31): warning C401
 C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(412,39): warning C4018: '<': signed/unsigned mismatch
 C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(460,31): warning C4018: '<': signed/unsigned mismatch
 C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(463,39): warning C4018: '<': signed/unsigned mismatch
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(560,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(683,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(692,23): warning C4018: '>=': signed/unsigned mismatch
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(701,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(703,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(708,23): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(571,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(694,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(703,23): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(712,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(714,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\andyf\source\repos\CDDA_Map\CDDA_Map\CDDA_Map.cpp(719,23): warning C4018: '>=': signed/unsigned mismatch
   CDDA_Map.vcxproj -> C:\Users\andyf\source\repos\CDDA_Map\Debug\CDDA_Map.exe
