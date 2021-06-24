@@ -1,0 +1,46 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "baseline",
+    "object": {
+      "fill_ter": "t_dirt"
+      "rows": [
+        "                        ",
+        " ## ## ##      ## ## ## ",
+        " #                    # ",
+        "                        ",
+        " #                    # ",
+        " #                    # ",
+        "                        ",
+        " #     ##########     # ",
+        " #     #....++++#     # ",
+        "       #....++++#       ",
+        "       #....++++#       ",
+        "       #....++++#       ",
+        "       #||||....#       ",
+        "       #||||....#       ",
+        "       #||||....#       ",
+        " #     #||||....#     # ",
+        " #     ##########     # ",
+        "                        ",
+        " #                    # ",
+        " #                    # ",
+        "                        ",
+        " #                    # ",
+        " ## ## ##      ## ## ## ",
+        "                        "
+      ],
+      "terrain": { }, 
+      "furniture": { }, 
+      "palettes": { }, 
+      "place_items": [ 
+        { "group": "mechanics", "x": [ 8, 8 ], "y": [ 11, 11 ], "chance": 80 "repeat": [ 1, 3 ] },
+        { "group": "mechanics", "x": [ 12, 12 ], "y": [ 15, 15 ], "chance": 80 "repeat": [ 1, 3 ] }
+      "place_monsters": [ 
+        { "monster": "mon_zombie", "x": [ 12, 8 ], "y": [ 15, 11 ], "density": 50 },
+        { "monster": "mon_zombie", "x": [ 8, 12 ], "y": [ 11, 15 ], "density": 50 },
+        { "monster": "mon_zombie", "x": [ 2, 20 ], "y": [ 3, 21 ], "density": 50 }
+    }
+  }
+]
