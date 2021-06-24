@@ -3,13 +3,20 @@
 Converts .bmp images into pre-formatted data for CDDA JSON.
 
 # How To Use
-Colors on the bitmap are converted to symbols and printed to the output file.
+Maps require 3 bitmaps: a tile map, a monster map, and an item map named as:
+  Map.bmp
+  Map_m.bmp
+  Map_i.bmp
 
-Colors are defined in "rules.txt" as "R G B=S" ex: "100 255 120=+"
+Rules.txt defines the output behavior.
+  Tiles are defined as:
+  `R G B=SYMBOL;` ex: `80 250 250=5;`
+  Monster groups are defined as:
+  `R G B=GROUPNAME DENSITY;` ex: `255 0 0=mon_zombie 50;`
+  Item groups are defined as: 
+  `R G B=GROUPNAME CHANCE REPEAT_LOW REPEAT_HIGH;` ex: `0 0 255=mechanics 80 1 3;`
 
-Place a 24-bit bitmap into the application folder and run the application.
-It will output entries for "om_terrain" and "rows" for the mapgen json, and "overmaps" for the overmap special json.
+Place a all three 24-bit bitmaps into the application folder and run the application.
+The map JSON will be output in it's entirety, along with a separate file `Map_extras.json` containing useful entries for defining overmap specials.
 
 *Note: There is no sanity checking for image size, so make sure your image dimensions are some multiple of 24
-
-*Also Note: Overmaps are set to z-level 9 (line 250) , so change that if you don't want your specials to spawn in space
